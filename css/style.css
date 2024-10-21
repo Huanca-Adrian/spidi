@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Russo One', sans-serif; /* Fuente tipo Spider-Man */
+    background-color: #e90404; /* Fondo rojo */
+    color: #FFD700; /* Texto dorado */
+}
+
+header {
+    background: url('img/spidi.jpg') no-repeat center center; /* Imagen de fondo */
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Para permitir la superposición de contenido */
+}
+
+header h1 {
+    color: #FFD700; /* Título dorado */
+    font-size: 5rem;
+    text-shadow: 2px 2px 5px black;
+    position: relative; /* Para asegurarnos de que esté por encima del fondo */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen de fondo */
+}
+
+nav {
+    position: sticky; /* Se mantendrá fijo al desplazarse */
+    top: 0; /* Se queda en la parte superior */
+    background-color: rgba(165, 0, 0, 0.8); /* Rojo oscuro y transparente */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Texto blanco */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FF4500; /* Rojo brillante en hover */
+}
+
+.caja {
+    background-color: #003366; /* Azul oscuro */
+    padding: 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.container p {
+    color: white; /* Texto blanco */
+    font-size: 30px;
+    text-align: center;
+    transition: color 0.3s;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ajustar el número de columnas */
+    gap: 20px;
+    padding: 20px;
+}
+
+ul li {
+    background-color: rgba(255, 0, 0, 0.7); /* Fondo rojo con transparencia */
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#redes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+#redes a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#redes a img:hover {
+    transform: scale(1.2);
+}
+
+#contacto {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#contacto div {
+    text-align: center;
+    color: white;
+}
+
+.pie {
+    background-color: #A50000; /* Rojo oscuro */
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+iframe {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.sticky + .caja {
+    padding-top: 70px;
+}
